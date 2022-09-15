@@ -1,8 +1,20 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent, act } from '@testing-library/react';
 import App from './App';
+import { funnyCat } from './resources/funnycat';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App', () =>{
+  test('Render a welcoming message', () =>{
+    render(<App />);
+
+  })
+
 });
+
+
+
+describe('funnyCat', () =>{
+  test('Return an array of object', () =>{
+    expect(typeof(funnyCat)).toBe('object');
+    expect(typeof(funnyCat[0])).toBe('object');
+  })
+})

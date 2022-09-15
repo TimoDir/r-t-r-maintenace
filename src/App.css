@@ -1,38 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rampart+One&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App::before{
+  content: "";
+  background-image: url('https://thumbs.dreamstime.com/b/mod%C3%A8le-chat-mignon-de-bande-dessin%C3%A9e-sans-couture-bandes-dessin%C3%A9es-gribouillages-tir%C3%A9s-par-la-main-chaton-dans-diff%C3%A9rentes-167957138.jpg');
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 2700px;
+  z-index: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header{
   display: flex;
+  justify-content: space-between;
+  align-content: center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.94);
+  background-size: cover;
+  height: 200px;
+  font-family: 'Rampart one', serif;
+  z-index: 2;
 }
 
 .App-link {
   color: #61dafb;
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-Tmblr{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 80px 0px;
+  z-index: 2;
+}
+
+.App-img {
+  background: rgba(255, 255, 255, 0.8);
+  border: solid 1.5px #D2E2FA;
+  min-width: 27%;
+  min-height: 500px;
+  align-items: center;
+  margin: 25px;
+  z-index: 2;
+}
+
+.App-img img{
+  margin: 25px 10px 10px 10px;
+  width: 300px;
+  height: 250px;
+  border: solid 3px #63676E;
+  z-index: 2;
 }
